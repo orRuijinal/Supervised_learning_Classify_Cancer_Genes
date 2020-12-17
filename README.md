@@ -16,4 +16,7 @@ This project focus on only using methods such as KNN, LDA, QDA, and Logistic Log
   
   
 ## Inbalanced Sample
-    From the training data set we can see that it contains about 89\% of “NG” genes, 5.5\% of “OG” genes, and 5.5\% of “TSG” genes. The model that relies on this training data set might become skewed to minority classes. In this situation, we utilized upsampling techniques to mitigate the issues. We also took downsampling into account, but it did not perform well since the proportion of minority class is too small, which will lead to a problem that we will only have a small training data set. The motivation of Upsampling techniques is quite simple that we randomly draw samples from the minority class so that the minority class will end up having the same size as the majority class.
+   From the training data set we can see that it contains about 89\% of “NG” genes, 5.5\% of “OG” genes, and 5.5\% of “TSG” genes. The model that relies on this training data set might become skewed to minority classes. In this situation, we utilized upsampling techniques to mitigate the issues. We also took downsampling into account, but it did not perform well since the proportion of minority class is too small, which will lead to a problem that we will only have a small training data set. The motivation of Upsampling techniques is quite simple that we randomly draw samples from the minority class so that the minority class will end up having the same size as the majority class.
+   
+## Statistical Model
+  we fit our model again using all significant predictors from multinomial logistic regression and we can see a better performance on predicting cancer genes.(WCA: 0.82298)
